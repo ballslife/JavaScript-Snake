@@ -299,7 +299,7 @@ SNAKE.Snake = SNAKE.Snake || (function() {
         */
         me.eatFood = function() {
             if (blockPool.length <= growthIncr) {
-                createBlocks(growthIncr*2);
+                createBlocks(growthIncr*100);
             }
             var blocks = blockPool.splice(0, growthIncr);
             
